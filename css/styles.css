@@ -1,0 +1,36 @@
+/* 
+цвето фона вторичный #F5F4FA
+цвет шрифта основной - #757575
+цвет выделения - #2196F3
+вторичный цвет текста - #212121
+цвет на футере - #FFFFFF и телефон и мыло rgb(255, 255, 255, 0.6)
+
+кнопки background: #F5F4FA и background: #2196F3
+
+основной шрифт font-family: Roboto; normal
+шрифт лого font-family: Raleway 
+*/
+
+/* Main body */
+
+.page{
+background-color: #FFFFFF;
+color: #757575;
+}
+
+.logo{
+    color: #212121;
+}
+
+.accent{
+    color: #2196F3;
+}
+
+.list{
+    list-style: none;
+}
+
+/* Site nav */
+.site-nav .site-link:hover{
+    color: #2196F3;
+}
