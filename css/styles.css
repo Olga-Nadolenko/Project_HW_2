@@ -14,16 +14,23 @@
 :root{
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
-
+    --accent-color: #2196F3;
+    --primary-bg-color: #E5E5E5;
 }
 
 /* body */
 
 .page{
-background-color: #FFFFFF;
-color: #757575;
+background-color: var(--primary-bg-color);
+color: var(--primary-text-color);
+
+font-family: Roboto, sans-serif;
+letter-spacing: 0.03em;
 }
 
+.header-info{
+    background-color: #FFFFFF;
+}
 .list{
     list-style: none;
 }
@@ -31,48 +38,69 @@ color: #757575;
 /* Logo */
 .logo-up,
 .logo-up:focus{
-    color: #212121;
+    color: var(--secondary-text-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2px;
 }
 
 .accent{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
+/* hero */
+.hero-button{
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
 
 /* Site nav */
 .site-link{
-    color: #212121;
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .site-link.current{
+    color: var(--accent-color);
 }
 
 .site-nav .site-link:hover, 
 .site-nav .site-link:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Site contacts */
 .site-contacts{
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .site-contacts:hover{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* advantages */
 .advantages-title{
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 /* about-us */
 .secondary-title{
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 /* Team */
-
+.team{
+    background-color: #F5F4FA;
+}
 
 .team-title-name{
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 
@@ -84,6 +112,11 @@ color: #757575;
 .logo-down,
 .logo-down:focus{
     color: #FFFFFF;
+
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2px;
 }
 .info-address{
     color: #FFFFFF;
@@ -95,9 +128,23 @@ color: #757575;
 
 /* portfolio */
 .main-portfolio{
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .portfolio-description{
-    color: #757575;
+    color: var(--primary-text-color);
+}
+
+.navigation{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6px;
+}
+.navigation-button{
+    background-color: #F5F4FA;
+}
+.navigation-button:focus,
+.navigation-button:hover{
+    background-color: var(--accent-color);
+    color: #FFFFFF;
 }
